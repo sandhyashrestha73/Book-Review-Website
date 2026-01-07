@@ -1,0 +1,576 @@
+/* ===== CSS Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 0 20px 20px 20px;
+    margin: 0;
+}
+
+/* ===== Hide old headers ===== */
+.main-header {
+    display: none;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+/* ===== Sticky Navigation Bar with Logo ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    margin: 0 -20px 30px -20px;
+}
+
+header nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.site-name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ===== Modern Section Styling ===== */
+h2, h3 {
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #667eea;
+}
+
+/* ===== Content Cards/Containers ===== */
+h2 + p, h3 + p {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin: 15px 0 25px 0;
+    border-left: 4px solid #667eea;
+}
+
+/* ===== Lists Styling ===== */
+ul, ol {
+    background: white;
+    padding: 25px 25px 25px 50px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin: 15px 0 25px 0;
+}
+
+li {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+ul li::marker {
+    color: #667eea;
+}
+
+ol li::marker {
+    color: #764ba2;
+    font-weight: bold;
+}
+
+/* ===== Book Cards (Index Page) ===== */
+#imgdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.img {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-color: #667eea;
+}
+
+.img img {
+    width: 100%;
+    max-width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.img:hover img {
+    transform: scale(1.05);
+}
+
+.img h2 {
+    color: #667eea;
+    font-size: 1.4rem;
+    margin: 15px 0 10px 0;
+    padding-left: 0;
+}
+
+.img h2::before {
+    display: none;
+}
+
+.img p {
+    color: #555;
+    line-height: 1.6;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+/* ===== About Hero Section ===== */
+.about-hero {
+    background-image: url("../groupstudy.png");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.about-content h1 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* ===== Team Members Section ===== */
+#member {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.memb {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.memb:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-color: #764ba2;
+}
+
+.memb img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.memb h3 {
+    color: #667eea;
+    margin: 15px 0 5px 0;
+    padding-left: 0;
+}
+
+.memb h3::before {
+    display: none;
+}
+
+.memb p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.memb b {
+    color: #764ba2;
+    font-size: 1.1rem;
+}
+
+/* ===== Buttons ===== */
+#mail, #form {
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#mail:hover, #form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== Forms ===== */
+.membership-form, .sendingmsg {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form h2, .sendingmsg h2 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.membership-form h2::before, .sendingmsg h2::before {
+    display: none;
+}
+
+.membership-form label, .sendingmsg label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.membership-form input,
+.membership-form select,
+.membership-form textarea,
+.sendingmsg input,
+.sendingmsg textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.membership-form input:focus,
+.membership-form select:focus,
+.membership-form textarea:focus,
+.sendingmsg input:focus,
+.sendingmsg textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.membership-form button, .sendingmsg button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.membership-form button:hover, .sendingmsg button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== Book Images Gallery (Books Page) ===== */
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.shadowimg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 30px 0;
+    justify-items: center;
+}
+
+.shadowimg img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 3px solid white;
+}
+
+.shadowimg img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Review Page Images ===== */
+h2 + img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 3px solid #f0f0f0;
+}
+
+/* ===== Footer Navigation ===== */
+.footer-nav {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    margin: 50px -20px -20px -20px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.footer-nav h3 {
+    color: white;
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+
+.footer-nav h3::before {
+    display: none;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.footer-nav p {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== Horizontal Rule ===== */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #667eea, transparent);
+    margin: 40px 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        padding-top: 20px;
+    }
+    
+    header {
+        margin: -15px -15px 20px -15px;
+    }
+    
+    header nav {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .site-name {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    header nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .about-hero {
+        height: 400px;
+    }
+    
+    .about-content {
+        padding: 30px;
+    }
+    
+    h2::before {
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        padding-top: 20px;
+    }
+    
+    header {
+        margin: -10px -10px 20px -10px;
+    }
+    
+    header nav {
+        padding: 10px 15px;
+    }
+    
+    .site-name {
+        font-size: 1rem;
+    }
+    
+    header nav a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+    
+    .membership-form, .sendingmsg {
+        padding: 25px;
+    }
+}
+
+
+
+.most-liked-books article {  /*review rating of mountain tail*/
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}

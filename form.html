@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Form</title>
+    <link rel="stylesheet" href="CSS Folder/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">
+                    <!-- This will show your logo.png image -->
+                    <img src="logo.png" alt="Book Review Logo">
+                </div>
+                <h1 class="site-name">Book Reviews</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="books.html">BOOKS</a>
+                <a href="review.html">REVIEW</a>
+                <a href="form.html">APPLY FORM</a>
+            </div>
+        </nav>
+    </header>
+
+ <form class="membership-form">
+    <h2>Join Our Book Review Community</h2>
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Email Address</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Favorite Book Genre</label>
+    <select required>
+        <option value="">Select Genre</option>
+        <option>Fiction</option>
+        <option>Non-Fiction</option>
+        <option>Fantasy</option>
+        <option>Romance</option>
+        <option>Mystery</option>
+    </select>
+
+    <label>Membership Type</label>
+    <select required>
+        <option value="">Select Type</option>
+        <option>Reader</option>
+        <option>Reviewer</option>
+    </select>
+
+    <label>Why do you want to join?</label>
+    <textarea rows="4"></textarea>
+
+    <button type="submit">Join Now</button>
+</form>
+     <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <a href="books.html">Books</a> | <a href="contact.html">Contact</a> | <a href="review.html">Review</a> | <a href="about.html">About</a>
+    </div>
+    <hr>
+    <div class="footer-nav">
+        <p>&copy; 2026 Book Reviews. All rights reserved.</p>
+    </div>
+</body>
+</html>

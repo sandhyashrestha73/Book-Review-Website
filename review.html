@@ -2,67 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review</title>
-   <!--- <style>
-         body
-        {
-            background-color: azure; color: white;
-            margin: 10px;
-            padding: 20px;
-            
-        }
-    </style> -->
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="CSS Folder/style.css">
 </head>
 <body>
-    <h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Book Review Website</b></h1>
-    <h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your ultimate destination for honest book reviews and literary discoveries!</b></h2>
-    <!-- Navigation Bar using Table -->
-        <header>
+    
+     <header>
         <nav>
-          <table >
-             <tr >
-                <td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-               <td><a href="index.html ">Home</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td><a href="about.html">About</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td><a href="contact.html">Contact</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td ><a href="books.html">Books</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td><a href="review.html">Review </a></td>
-              
-           </tr>
-         </table>
-       </nav>
-     </header>
-        
-         <!-- Book Review 1 -->
-   
-        <h2 >To Kill a Mockingbird</h2>
-        <img src="image/tokillamockingbird.png" width="220" height="250" alt="To Kill a Mockingbird Book Cover">
-        
-        
-            <h3 >Book Details</h3>
+            <div class="logo-container">
+                <div class="logo">
+                    <!-- This will show your logo.png image -->
+                    <img src="logo.png" alt="Book Review Logo">
+                </div>
+                <h1 class="site-name">Book Reviews</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="books.html">BOOKS</a>
+                <a href="review.html">REVIEW</a>
+                <a href="form.html">APPLY FORM</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <h2>To Kill a Mockingbird</h2>
+    <img src="tokillamockingbird.png" width="220" height="250">
+    <h3 >Book Details</h3>
             <p >Author: Harper Lee<br>
             Genre: Southern Gothic, Bildungsroman<br>
             Published: 1960<br>
@@ -96,13 +64,13 @@
             <h3 >Recommend For</h3>
             <p  >Readers interested in classic literature, social justice themes, and coming-of-age stories.</p>
         
-    <!-- Book Review 3 -->
-    
-        <h2 >Shirishko Phool</h2>
-        <img src="image/sirishkoful.png" width="220" height="250" alt="Shirishko Phool Book Cover">
-        
-       
-            <h3 >Book Details</h3>
+    <p>A powerful story about racial injustice and moral growth seen through the eyes of a young girl in the American South.</p>
+
+    <hr>
+
+    <h2>Shirishko Phool</h2>
+    <img src="sirishkoful.png" width="220" height="250">
+   <h3 >Book Details</h3>
             <p >Author: Parijat (Bishnu Kumari Waiba)<br>
             Genre: Nepali Novel, Romance<br>
             Published: 1964<br>
@@ -137,10 +105,10 @@
             <h3 >Recommend For</h3>
             <p>Lovers of Nepali literature, romantic novels, and poetic storytelling.</p>
         
-
-        
-        <h2>The Diary of a Young Girl</h2>
-        <img src="image/thediaryofayounggirl.png" width="220" height="250" alt="The Diary of a Young Girl Book Cover">
+    <p>A classic Nepali novel that explores love, relationships, and social constraints through beautiful poetic language.</p>
+ <hr>
+    <h2>The Diary of a Young Girl</h2>
+        <img src="thediaryofayounggirl.png" width="220" height="250" alt="The Diary of a Young Girl Book Cover">
        
             <h3>Book Details</h3>
             <p>Author: Anne Frank<br>
@@ -176,37 +144,27 @@
             <h3>Recommend For</h3>
             <p>Readers interested in World War II history, autobiographical works, coming-of-age stories, and powerful narratives about resilience and hope.</p>
         
+<hr>
+<section class="most-liked-books">
+    <h2>Most Liked Books</h2>
+    <p>Here are the books liked most by readers.</p>
 
-       
-             <h2>Most Liked Books</h2>
-            <p >Here is the books liked most by readers.</p>
-        
-        <!-- List of most liked books -->
- 
-   
-      <h2 > The Mountain Tale</h2>
-      <p >Author: S. Sharma</p>
-      <p>Average Rating: ***** (4.9) — Likes: 1240</p>
-      <p >Summary: A novel about village life, family and coming-of-age in the hills.</p>
-     
-  
-    
-<h2>Platform Rules and Review Ethics</h2>
-<p>We take book reviews seriously. Every review on our platform is honest, fair, and spoiler-free. 
-    We maintain transparency and encourage positive and constructive feedback. By following these rules,
-     we ensure that every reader can trust our reviews and make informed choices about the books they read.</p>
-    
-        <h3>More Review Sources</h3>
-        <ul>
-            <li><a href="https://www.goodreads.com" target="_blank">Goodreads - Community Reviews</a></li>
-            <li><a href="https://www.oxfordcollege.edu.np" target="_blank">Oxford College - Academic Resources</a></li>
-        </ul>
-    
-    <h3 >Go Wherever You Want Inside Website</h3>
-    <a href="index.html">Home Page</a> <br>
-    <a href="contact.html">Contact</a> <br>
-    <a href="review.html">Review</a> <br>
-    <a href="about.html">About</a> <br>
-    
+    <article class="book">
+        <h3>The Mountain Tale</h3>
+        <p><strong>Author:</strong> S. Sharma</p>
+        <p><strong>Average Rating:</strong> ★★★★☆ (4.9/5) — Likes: 1240</p>
+        <p><strong>Summary:</strong> A novel about village life, family, and coming-of-age in the hills.</p>
+    </article>
+</section>    
+
+
+  <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <a href="books.html">Books</a> | <a href="contact.html">Contact</a> | <a href="review.html">Review</a> | <a href="about.html">About</a>
+    </div>
+    <hr>
+    <div class="footer-nav">
+        <p>&copy; 2026 Book Reviews. All rights reserved.</p>
+    </div>
 </body>
 </html>

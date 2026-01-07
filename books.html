@@ -2,82 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Available Books</title>
-   <!-- <style>
-        body{
-            background-color:azure;
-            margin: 10px;
-            padding: 20px;
-   }
-    </style> -->
+    <link rel="stylesheet" href="CSS Folder/style.css">
 </head>
 <body>
-       <h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Book Review Website</b></h1>
-    <h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your ultimate destination for honest book reviews and literary discoveries!</b></h2>
-    
-    
-    <!-- Navigation Bar using Table -->
-     <header>
-     <nav>
-          <table >
-             <tr >
-                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              <td><a href="index.html ">Home</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td><a href="about.html">About</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td><a href="contact.html">Contact</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td ><a href="books.html">Books</a></td>
-               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-               <td><a href="review.html">Review </a></td>
-              
-           </tr>
-         </table>
-       </nav>
-     </header>
-    <h2>Available Books</h2>
-        <h4>We have a variety of books available for students and readers.
-            Click on each category to see the list of books. 
-        </h4>
-        
-                <img src="image/tokillamockingbird.png" height="220" width="250" alt="img">
-                <img src="image/thehungergames.png" height="220" width="250" alt="img">
-           
-     <!-- Fiction Books -->
    
-   <h2>Fiction Books</h2>
-        <ul>
-            <li>Harry Potter and the Sorcerer's Stone</li>
-            <li>The Hunger Games</li>
-            <li>Pride and Prejudice</li>
-            <li>To Kill a Mockingbird</li>
-        </ul>
+   <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">
+                    <!-- This will show your logo.png image -->
+                    <img src="logo.png" alt="Book Review Logo">
+                </div>
+                <h1 class="site-name">Book Reviews</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="books.html">BOOKS</a>
+                <a href="review.html">REVIEW</a>
+                <a href="form.html">APPLY FORM</a>
+            </div>
+        </nav>
+    </header>
+
+
+ <h2 class="title">Available Books</h2>
+
+  <div class="shadowimg">
+    <img src="tokillamockingbird.png" alt="To Kill a Mockingbird">
+    <img src="thehungergames.png" alt="The Hunger Games">
+    <img src="becoming.jpg" alt="Becoming">
+    <img src="thediaryofayounggirl.png" alt="The Diary of a Young Girl">
+    <img src="hamlet.png" alt="Hamlet">
+  </div>
+
+
+    <h3>Fiction Books</h3>
+    <ul>
+        <li>Harry Potter and the Sorcerer's Stone</li>
+        <li>The Hunger Games</li>
+        <li>To Kill a Mockingbird</li>
+    </ul>
+
     
-    <img src="image/becoming.jpg" width="220" height="250" alt="img">
-            <img src="image/thediaryofayounggirl.png" width="220" height="250" alt="img">
-        
-    <!-- Non-Fiction Books -->
-     <h2>Non-Fiction Books</h2>
+    <h2>Non-Fiction Books</h2>
         <ul>
             <li>Sapiens: A Brief History of Humankind</li>
             <li>Educated by Tara Westover</li>
@@ -85,10 +55,7 @@
             <li>Becoming by Michelle Obama</li>
         </ul>
     
-            <img src="image/hamlet.png" width="220" height="250" alt="img">
-            <img src="image/deathofasalesman.png" width="220" height="250" alt="img">
-        
-    <!-- Drama Books -->
+   
      <h2>Drama Books</h2>
         <ul>
             <li>Hamlet by William Shakespeare</li>
@@ -96,18 +63,12 @@
             <li>Macbeth by William Shakespeare</li>
             <li>A Streetcar Named Desire by Tennessee Williams</li>
         </ul>
-    
-    <img src="image/setobagh.png" width="220" height="250" alt="img">
-            <img src="image/sirishkoful.png" width="220" height="250" alt="img">
-       
-    <!-- Nepali Books -->
-    <h2>Nepali Books</h2>
-        <ul>
-            <li>Basain by Lil Bahadur Chettri</li>
-            <li>Palpasa Café by Narayan Wagle</li>
-            <li>Seto Bagh by Diamond Shumsher Rana</li>
-            <li>Shirishko Phool by Parijat</li>
-        </ul>
+    <h3>Nepali Books</h3>
+    <ul>
+        <li>Palpasa Cafe by Narayan Wagle</li>
+        <li>Seto Bagh by Diamond Shumsher Rana</li>
+        <li>Shirishko Phool by Parijat</li>
+    </ul>
 
         <h3>Community Interaction</h3>
         <p>This platform is open for everyone who loves reading and wants to be a part of a growing community.
@@ -125,16 +86,20 @@
                     <li>To Kill a Mockingbird :- Harper Lee (Fiction, Classic)</li>
                     <li>Rich Dad Poor Dad :-Robert Kiyosaki (Business, Finance)</li>
                     <li>Seto Bagh:- Diamond Shumsher Rana (Nepali Fiction, Historical)</li>
-                    <li>Palpasa Café :-Narayan Wagle (Nepali Fiction, Contemporary)</li>
+                    <li>Palpasa Cafe :-Narayan Wagle (Nepali Fiction, Contemporary)</li>
                     <li>The Power of Habit :-Charles Duhigg (Non-fiction, Self Improvement)</li>
                     <li>1984 :- George Orwell (Fiction, Dystopian)</li>
                     <li> Little Prince :- Antoine de Saint-Exupéry (Fiction, Children & Adults)</li>
                 </ol>
-        <h3>Go Wherever You Want Inside Website</h3>
-            <a href="index.html">Home Page</a> <br>
-            <a href="contact.html">Contact</a> <br>
-            <a href="review.html">Review</a> <br>
-            <a href="about.html">About</a> <br>
-    
+
+
+    <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <a href="books.html">Books</a> | <a href="contact.html">Contact</a> | <a href="review.html">Review</a> | <a href="about.html">About</a>
+    </div> 
+    <hr>
+    <div class="footer-nav">
+        <p>&copy; 2026 Book Reviews. All rights reserved.</p>
+    </div>           
 </body>
 </html>
