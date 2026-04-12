@@ -4,6 +4,61 @@
     <meta charset="UTF-8">
     <title>Contact Us | BookReviews</title>
     <link rel="stylesheet" href="CSS Folder/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            }
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+/* LEFT SIDE */
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2 span {
+    color: #00bcd4;
+}
+
+/* RIGHT SIDE FORM */
+.contact-form {
+    width: 45%;
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0097a7;
+}
+    </style>
 </head>
 <body>
    
@@ -27,36 +82,53 @@
             </div>
         </nav>
     </header>
-
-
+    <div class="contact-container">
+    <div id="contact-info">
+        <h2> 📞<span style="color: blue;">Phone</span></h2>
+            <p>9703435733</p>
+        <h2>📍<span style="color: blue;">Address</span></h2>  
+            <p>Devchuli-14 Chhattishghar , Nawalpur</p>  
+    </div>
+    <div id="contact-form">
     <form class="sendingmsg">
         <h2>Send Us a Message</h2>
         <label for="name">Your Name:</label>
         <input type="text" id="name" required>
+
         <label for="email">Email Address:</label>
         <input type="email" id="email" required>
+
         <label for="message">Your Message:</label>
         <textarea id="message" rows="5" required></textarea>
+
         <button type="submit">Submit Message</button>
     </form>
-
+    </div>
+   </div> 
      <div style="text-align: center;">
         <h2>Other Ways to Reach Us</h2>
         <a href="mailto:sandhyashrestha431@gmail.com" id="mail">Mail Us</a>
         <p>Follow us on <a href="https://www.facebook.com/oxfordcollegenepal"> Facebook</a> 
     </div>
+    <div class="inforow">
+        <div id="index">
    <h2>Partnership and Collaboration</h2>
         <p>If you want to partner with us for book events, sponsorships, or reviews, contact us using our form or email.</p>
-
-
+    </div>
+  <div id="index">
     <h2> Frequently Asked Questions</h2>
         <h3>How can I submit a book review?</h3>
             <p>You can submit reviews through our submission form on the Reviews page.</p>
-        <h3>Do you accept guest posts?</h3>
+       </div>
+       <div id="index">
+            <h3>Do you accept guest posts?</h3>
             <p>Yes! Please contact us with your idea and writing samples.</p>
-        <h3>How often do you post new reviews?</h3>
+       </div>
+       <div id="index">
+            <h3>How often do you post new reviews?</h3>
             <p>We post new reviews every Tuesday and Thursday.</p>
-
+    </div>
+</div>
 <div class="footer-nav">
         <h3>Quick Links</h3>
         <a href="books.html">Books</a> | <a href="index.html">Home</a> | <a href="review.html">Review</a> | <a href="about.html">About</a>
